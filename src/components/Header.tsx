@@ -1,10 +1,9 @@
 import Navbar from "./Navbar";
 
 function Header() {
-    const links = ["Home", "About", "Skills", "Projects", "Contact"]
+    const links = ["Home", "About", "Skills", "Projects"]
   return (
     <header>
-      <h1>Mon Portfolio</h1>
       <Navbar links={links}/>
     </header>
   );
