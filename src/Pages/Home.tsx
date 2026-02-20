@@ -9,14 +9,14 @@ function Home() {
             </div>
             <div className="Home-Right">
                 <h1 className="text-2xl md:text-4xl lg:text-5xl font-normal md:font-semibold lg:font-bold text-center">
-                    Bonjour, Je suis RANDRIANANTOANINA Mandresy Gaëtan
+                Bonjour, je suis <strong>RANDRIANANTOANINA Mandresy Gaëtan</strong>
                 </h1>
-            <p className="text-base md:text-lg lg:text-xl text-justify leading-relaxed">
-                Passionné par le développement et la gestion des systèmes,
-                je crée des solutions performantes et sécurisées, 
-                alliant innovation et fiabilité. Toujours curieux et motivé, 
-                je cherche à transformer les idées en projets concrets qui ont un impact réel.
-            </p>
+                <h2 className="text-lg md:text-xl lg:text-2xl font-medium text-center mt-2">
+                Développeur Full Stack & Administrateur Systèmes et Réseaux
+                </h2>
+                <p className="text-base md:text-lg lg:text-xl text-justify leading-relaxed mt-4">
+                    Passionné par le développement et la gestion des systèmes, je crée des solutions performantes et sécurisées, alliant innovation et fiabilité. Toujours curieux et motivé, je transforme les idées en projets concrets ayant un impact réel.
+                </p>
             </div>
         </section>
     );
