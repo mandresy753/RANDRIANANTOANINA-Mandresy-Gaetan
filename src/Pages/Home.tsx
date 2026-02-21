@@ -1,3 +1,5 @@
+import profileImg from "/src/assets/images/my_photo.png";
+
 function Home() {
     return (
         <section className="
@@ -7,7 +9,7 @@ function Home() {
             border-4
         ">
             <div className="Home-Left border-4">
-                <img src="src/assets/images/my_photo.png" alt="Photo de RANDRIANANTOANINA Mandresy Gaëtan" />
+                <img src={profileImg} alt="Photo de RANDRIANANTOANINA Mandresy Gaëtan" />
             </div>
             <div className="Home-Right flex flex-col items-center justify-center">
                 <h1 className="text-2xl md:text-4xl lg:text-5xl font-normal md:font-semibold lg:font-bold text-center">
