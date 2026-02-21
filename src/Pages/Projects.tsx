@@ -4,14 +4,14 @@ function Projects() {
         "https://github.com/NyRalaivao/pokedexReact.git"
     ]
 
-    return(<>
+    return(<section id="Projects">
         <h2>My projects</h2>
         <ul>
             {projects.map((project) => (
                 <li><a href= {project}>{project}</a></li>
             ))} 
         </ul>
-    </>
+    </section>
     )
 }
 
