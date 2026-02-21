@@ -3,6 +3,7 @@ import profileImg from "/src/assets/images/my_photo.webp";
 function Home() {
     return (
         <section className="
+            w-full h-screen
             flex flex-col md:flex-row
             gap-6 md:gap-10
             p-8 md:p-8 lg:px-18

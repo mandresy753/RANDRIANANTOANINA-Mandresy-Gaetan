@@ -1,9 +1,9 @@
-import htmlIcon from "/src/assets/icons/html-5.png";
-import cssIcon from "/src/assets/icons/css-3.png";
-import jsIcon from "/src/assets/icons/js.png";
-import postgresIcon from "/src/assets/icons/postgresql.png";
-import javaIcon from "/src/assets/icons/java.png";
-import gitIcon from "/src/assets/icons/github.png";
+import htmlIcon from "/src/assets/icons/html-5.webp";
+import cssIcon from "/src/assets/icons/css-3.webp";
+import jsIcon from "/src/assets/icons/js.webp";
+import postgresIcon from "/src/assets/icons/postgresql.webp";
+import javaIcon from "/src/assets/icons/java.webp";
+import gitIcon from "/src/assets/icons/github.webp";
 
 const skills = [
   { name: "HTML", icon: htmlIcon },
@@ -16,7 +16,7 @@ const skills = [
 
 function Skills() {
   return (
-    <section id="Skills" className="p-6">
+    <section id="Skills" className="w-full h-screen p-6">
       <h2 className="text-3xl font-bold mb-6 text-center">Mes Compétences</h2>
       <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-6 justify-items-center">
         {skills.map((skill) => (
