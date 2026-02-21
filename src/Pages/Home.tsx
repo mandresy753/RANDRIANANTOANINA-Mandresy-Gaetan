@@ -1,4 +1,4 @@
-import profileImg from "/src/assets/images/my_photo.png";
+import profileImg from "/src/assets/images/my_photo.webp";
 
 function Home() {
     return (
