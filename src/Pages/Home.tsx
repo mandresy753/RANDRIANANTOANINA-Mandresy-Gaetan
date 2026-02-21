@@ -7,9 +7,8 @@ function Home() {
             flex flex-col md:flex-row
             gap-6 md:gap-10
             p-8 md:p-8 lg:px-18
-            border-4
         ">
-            <div className="Home-Left border-4">
+            <div className="Home-Left">
                 <img src={profileImg} alt="Photo de RANDRIANANTOANINA Mandresy Gaëtan" />
             </div>
             <div className="Home-Right flex flex-col items-center justify-center">

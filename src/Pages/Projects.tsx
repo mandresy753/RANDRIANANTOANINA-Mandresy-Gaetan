@@ -18,7 +18,7 @@ function Projects() {
 ];
 
     return(
-        <section id="Projects" className="w-full h-screen p-6 border-4 ">
+        <section id="Projects" className="w-full h-screen p-6">
             <h2 className="text-3xl font-bold mb-6 text-center">Mes Projets</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {projects.map(project => (
