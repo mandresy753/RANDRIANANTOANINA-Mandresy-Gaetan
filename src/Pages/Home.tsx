@@ -29,7 +29,7 @@ function Home() {
                         }}
                     >Mes Projets
                     </button>
-                    <button className="bg-blue-600 p-2.5 rounded-lg text-white">Télécharger mon CV</button>
+                    <button className="bg-blue-600 p-2.5 rounded-lg text-white">Me Contacter</button>
                 </div>
             </div>
         </section>
