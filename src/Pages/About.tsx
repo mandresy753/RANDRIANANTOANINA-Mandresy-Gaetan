@@ -4,7 +4,7 @@ function About(){
             flex flex-col
             gap-6 md:gap-10
             p-8 md:p-8 lg:px-18
-        ">
+        " id="about">
             <h2 className="text-3xl font-bold mb-6 text-center">A Propos de Moi</h2>
         <p className="text-base md:text-lg lg:text-xl text-justify leading-relaxed mt-4">
             Animé par une forte curiosité pour le numérique et motivé par l’envie constante de progresser, 
