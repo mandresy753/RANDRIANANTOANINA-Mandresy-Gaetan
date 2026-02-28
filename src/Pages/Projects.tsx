@@ -29,7 +29,8 @@ function Projects() {
           <div
             key={project.name}
             className="
-              border rounded-lg shadow-lg
+              rounded-lg
+              shadow-lg
               bg-white
               transition-transform duration-300
               hover:-translate-y-1 hover:shadow-2xl
@@ -37,14 +38,12 @@ function Projects() {
               w-full sm:w-96
             "
           >
-            {/* Image sans padding pour prendre toute la largeur */}
             <img
               src={project.image}
               alt={project.name}
-              className="w-full h-64 object-contain rounded-t-lg"
+              className="w-full h-64 object-contain"
             />
 
-            {/* Description et bouton avec padding */}
             <div className="p-4 flex flex-col flex-1">
               <h3 className="font-semibold text-2xl mb-2">{project.name}</h3>
               <p className="text-gray-700 text-base md:text-lg mb-4 flex-1">
