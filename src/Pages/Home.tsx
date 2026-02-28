@@ -24,7 +24,7 @@ function Home() {
                     <button 
                         className="bg-blue-600 p-2.5 rounded-lg text-white"
                         onClick={()=> {
-                            const Projects = document.getElementById("Projects")
+                            const Projects = document.getElementById("projects")
                             Projects?.scrollIntoView({behavior: "smooth"})
                         }}
                     >Mes Projets
