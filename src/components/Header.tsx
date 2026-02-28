@@ -1,7 +1,6 @@
 function Header() {
   return (
     <header>
-      <p>aa</p>
     </header>
   );
 }
