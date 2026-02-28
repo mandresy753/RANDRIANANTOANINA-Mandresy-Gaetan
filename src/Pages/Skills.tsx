@@ -18,7 +18,7 @@ function Skills() {
   return (
     <section id="skills" className="w-full h-screen p-6">
       <h2 className="text-3xl font-bold mb-6 text-center">Mes Compétences</h2>
-      <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-6 justify-items-center">
+      <ul className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-6 justify-items-center">
         {skills.map((skill) => (
           <li
             key={skill.name}
