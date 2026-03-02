@@ -9,7 +9,6 @@ function About() {
       className={
         `
       w-full min-h-screen bg-gray-50 px-6 py-20 flex flex-col items-center gap-8 md:gap-12
-      border-4
       
         transition-all duration-1500 ease-out
         ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
