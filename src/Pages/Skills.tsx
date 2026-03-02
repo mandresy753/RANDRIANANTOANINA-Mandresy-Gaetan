@@ -58,7 +58,7 @@ const softSkills: Skill[] = [
 
 function Skills() {
   return (
-    <section id="skills" className="w-full px-6 py-20">
+    <section id="skills" className="w-full min-h-screen px-6 py-20">
       <h2 className="text-4xl font-bold text-center mb-20">
         Mes <span className="text-blue-500">Compétences</span>
       </h2>

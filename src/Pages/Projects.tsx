@@ -19,7 +19,7 @@ function Projects() {
   ];
 
   return (
-    <section id="projects" className="w-full h-screen px-6 py-20 bg-gray-50">
+    <section id="projects" className="w-full min-h-screen px-6 py-20 bg-gray-50">
       <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
         Mes <span className="text-blue-500">Projets</span>
       </h2>
