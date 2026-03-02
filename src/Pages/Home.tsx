@@ -1,10 +1,18 @@
 import profileImg from "/src/assets/images/my_photo.webp";
+import { useInView } from "../hooks/useInView";
 
 function Home() {
+  const {ref, isVisible} = useInView(0.0)
   return (
     <section
       id="home"
-      className="w-full min-h-screen flex flex-col-reverse md:flex-row items-center justify-center gap-12 px-6 md:px-20 py-20 from-white to-gray-50"
+      ref={ref}
+      className={`
+        w-full min-h-screen flex flex-col-reverse md:flex-row items-center justify-center gap-12 px-6 md:px-20 py-20 from-white to-gray-50
+
+        transition-all duration-1500 ease-in
+        ${isVisible? "opacity-100": "opacity-0"}
+      `}
     >
       <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">

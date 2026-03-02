@@ -1,8 +1,21 @@
+import { useInView } from "../hooks/useInView";
+
 function About() {
+  const {ref, isVisible} = useInView(0.3)
+  
   return (
     <section
       id="about"
-      className="w-full bg-gray-50 px-6 py-20 flex flex-col items-center gap-8 md:gap-12"
+      className={
+        `
+      w-full h-screen bg-gray-50 px-6 py-20 flex flex-col items-center gap-8 md:gap-12
+      
+        transition-all duration-2000 ease-out
+        ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
+      `
+      }
+      
+      ref={ref}
     >
       <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
         A Propos de <span className="text-blue-500">Moi</span>
