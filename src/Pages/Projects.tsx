@@ -1,8 +1,8 @@
 import Tracker from "/src/assets/images/expense tracker.webp";
 import Pokedex from "/src/assets/images/pokedex.webp";
+import { useInView } from "../hooks/useInView";
 
-function Projects() {
-  const projects = [
+const projects = [
     {
       name: "Web2 Expense Tracker",
       url: "https://github.com/Arnel-rah/web2-expense-tracker.git",
@@ -18,13 +18,24 @@ function Projects() {
     },
   ];
 
+function Projects() {
+  const cardRef = useInView<HTMLDivElement>(0.4)
+  const titleRef = useInView<HTMLHeadingElement>(0.3)
+
   return (
     <section id="projects" className="w-full min-h-screen px-6 py-20 bg-gray-50">
-      <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+      <h2 className={`text-3xl md:text-4xl font-bold mb-12 text-center
+      duration-800
+        ${titleRef.isVisible? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 translate-x-10 "}
+        `}
+        ref={titleRef.ref}>
         Mes <span className="text-blue-500">Projets</span>
       </h2>
 
-      <div className="flex flex-wrap justify-center gap-8">
+      <div className={`flex flex-wrap justify-center gap-8
+        transtion-all duration-700 ease-out
+        ${cardRef.isVisible? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 "}`}
+        ref={cardRef.ref}>
         {projects.map((project) => (
           <div
             key={project.name}
