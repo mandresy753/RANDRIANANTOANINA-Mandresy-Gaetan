@@ -1,3 +1,5 @@
+import { useInView } from "../hooks/useInView";
+
 type Skill = {
   name: string;
   icon?: string;
@@ -57,20 +59,34 @@ const softSkills: Skill[] = [
 ];
 
 function Skills() {
+  const heading = useInView<HTMLHeadingElement>(0.3);
+  const hardSkillsRef = useInView<HTMLDivElement>(0.3)
+  const softSkillsRef = useInView<HTMLDivElement>(0.3)
   return (
     <section id="skills" className="w-full min-h-screen 5px-6 py-20">
-      <h2 className="text-4xl font-bold text-center mb-20">
+      <h2
+      ref={heading.ref}
+      className={`text-4xl font-bold text-center mb-20
+      transition-all duration-800 ease-out
+      ${heading.isVisible ? "opacity-100 scale-100" : "opacity-0 scale-0"}
+  `}
+>
         Mes <span className="text-blue-500">Compétences</span>
       </h2>
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div className="bg-white rounded-3xl p-10 shadow-lg border border-gray-200">
+        <div 
+        ref={hardSkillsRef.ref}
+        className=
+        {`"bg-white rounded-3xl p-10 shadow-lg border border-gray-200 
+          transition-all duration-800 ease-in
+        ${hardSkillsRef.isVisible? "opacity-100 translate-x-0":"opacity-0 -translate-x-10" }`}>
           <h3 className="text-2xl font-semibold mb-10 text-center">
             Compétences techniques
           </h3>
 
           {technicalSkillsByCategory.map((category) => (
-            <div key={category.category} className="mb-8">
+            <div key={category.category}   className={`mb-8`}>
               <h4 className="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-4">
                 {category.category}
               </h4>
@@ -96,7 +112,10 @@ function Skills() {
           ))}
         </div>
 
-        <div className="bg-white rounded-3xl p-10 shadow-lg border border-gray-200">
+        <div ref={softSkillsRef.ref}
+        className={`bg-white rounded-3xl p-10 shadow-lg border border-gray-200
+        transition-all duration-800 ease-in
+        ${softSkillsRef.isVisible? "opacity-100  translate-x-0":"opacity-0 translate-x-10" }`} >
           <h3 className="text-2xl font-semibold mb-10 text-center">
             Compétences comportementales
           </h3>

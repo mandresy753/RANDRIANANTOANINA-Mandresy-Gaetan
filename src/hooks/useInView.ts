@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 
-export function useInView(threshold= 0.2){
-    const ref = useRef<HTMLElement | null>(null)
+export function useInView<T extends HTMLElement>(threshold= 0.2){
+    const ref = useRef<T | null>(null)
     const [isVisible, setIsVisible] = useState(false)
     useEffect(()=> {
         const observer = new IntersectionObserver(
