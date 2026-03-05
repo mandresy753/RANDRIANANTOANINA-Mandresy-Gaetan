@@ -46,10 +46,10 @@ function Projects() {
             key={project.name}
             className="group flex flex-col w-full sm:w-96 rounded-2xl overflow-hidden 
                        transition-all duration-300 transform
-                       /* DESIGN CLAIR */
+                       
                        bg-white shadow-lg border border-gray-200 
                        hover:shadow-2xl hover:-translate-y-2
-                       /* DESIGN SOMBRE */
+
                        dark:bg-slate-800 dark:border-slate-700 
                        dark:shadow-[0_20px_50px_rgba(0,0,0,0.3)]
                        dark:hover:border-blue-400/50"
@@ -72,15 +72,12 @@ function Projects() {
                 {project.description}
               </p>
 
-              {/* Bouton GitHub */}
               <a
                 href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-auto self-start px-5 py-2.5 rounded-lg font-semibold transition-all
-                           /* LIGHT */
                            bg-blue-500 text-white hover:bg-blue-600
-                           /* DARK */
                            dark:bg-blue-600 dark:hover:bg-blue-500 dark:text-white
                            active:scale-95"
               >

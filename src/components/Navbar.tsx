@@ -10,11 +10,15 @@ type NavbarProps = {
 function Navbar({ links }: NavbarProps) {
   return (
     <nav className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50">
-      <ul className="flex gap-6 px-6 py-4 bg-white/30 backdrop-blur-xl rounded-full shadow-lg border border-white/20">
+      <ul className="flex gap-6 px-6 py-4 rounded-full shadow-lg transition-all duration-500
+                     bg-white/30 backdrop-blur-xl border border-white/20
+                     dark:bg-slate-900/40 dark:border-slate-700/50 dark:shadow-2xl">
         {links.map((link) => (
           <li
             key={link.name}
-            className="flex items-center gap-2 text-gray-700 hover:text-blue-500 transition"
+            className="flex items-center gap-2 transition-colors duration-300
+                       text-gray-700 hover:text-blue-500
+                       dark:text-slate-300 dark:hover:text-blue-400"
           >
             <a
               href={`#${link.name.toLowerCase()}`}
