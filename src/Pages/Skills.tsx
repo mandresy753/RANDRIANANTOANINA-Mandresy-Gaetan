@@ -82,6 +82,8 @@ function Skills() {
         className=
         {`"bg-white rounded-3xl p-10 shadow-lg border border-gray-200 
           transition-all duration-800 ease-in
+          dark:bg-slate-900/50 dark:border-slate-800 dark:shadow-2xl 
+           dark:backdrop-blur-xl
         ${hardSkillsRef.isVisible? "opacity-100 translate-x-0":"opacity-0 -translate-x-10" }`}>
           <h3 className="text-2xl font-semibold mb-10 text-center
            dark:text-slate-50">
@@ -99,7 +101,12 @@ function Skills() {
                 {category.skills.map((skill) => (
                   <li
                     key={skill.name}
-                    className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-50 border border-gray-200 text-sm font-medium text-gray-700 hover:border-blue-400 hover:text-blue-500 transition"
+                    className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-50 border border-gray-200 text-sm font-medium
+                     text-gray-700 hover:border-blue-400 hover:text-blue-500 transition
+                     dark:bg-slate-900 dark:border-slate-800 dark:text-slate-300 
+                    dark:hover:border-sky-400 dark:hover:text-sky-400
+                    "
+                  
                   >
                     {skill.icon && (
                       <img
@@ -119,6 +126,8 @@ function Skills() {
         <div ref={softSkillsRef.ref}
         className={` rounded-3xl p-10 shadow-lg border border-gray-200
         transition-all duration-800 ease-in
+        dark:bg-slate-900/50 dark:border-slate-800 dark:shadow-2xl 
+         dark:backdrop-blur-xl
         ${softSkillsRef.isVisible? "opacity-100  translate-x-0":"opacity-0 translate-x-10" }`} >
           <h3 className="text-2xl font-semibold mb-10 text-center
            dark:text-slate-50">
@@ -129,7 +138,10 @@ function Skills() {
             {softSkills.map((skill) => (
               <li
                 key={skill.name}
-                className="px-4 py-2 rounded-full bg-blue-50 border border-blue-200 text-sm font-medium text-blue-700 hover:bg-blue-100 transition"
+                className="px-4 py-2 rounded-full bg-blue-50 border
+                border-blue-200 text-sm font-medium text-blue-700 hover:bg-blue-100 transition
+                dark:bg-slate-900 dark:border-slate-800 dark:text-slate-300 
+              dark:hover:border-sky-400 dark:hover:text-sky-400"
               >
                 {skill.name}
               </li>
