@@ -8,20 +8,23 @@ function Home() {
       id="home"
       ref={ref}
       className={`
-        w-full min-h-screen flex flex-col-reverse md:flex-row items-center justify-center gap-12 px-6 md:px-20 py-20 from-white to-gray-50
-
+        w-full min-h-screen flex flex-col-reverse md:flex-row items-center justify-center gap-12 px-6 md:px-20 py-20
+        dark:bg-[#0F172A]
         transition-all duration-1500 ease-in
         ${isVisible? "opacity-100": "opacity-0"}
       `}
     >
       <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight
+        dark:text-slate-50">
           Bonjour, je suis <span className="text-blue-500">RANDRIANANTOANINA Mandresy Gaëtan</span>
         </h1>
-        <h2 className="mt-4 text-2xl md:text-3xl text-gray-700 font-semibold">
+        <h2 className="mt-4 text-2xl md:text-3xl text-gray-700 font-semibold
+         dark:text-slate-50">
           Développeur Full Stack & Administrateur Systèmes et Réseaux
         </h2>
-        <p className="mt-6 text-gray-600 text-base md:text-lg lg:text-xl max-w-2xl leading-relaxed">
+        <p className="mt-6 text-gray-600 text-base md:text-lg lg:text-xl max-w-2xl leading-relaxed
+        dark:text-slate-300">
           Passionné par le développement et la gestion des systèmes, je crée des solutions performantes et sécurisées, alliant innovation et fiabilité. Toujours curieux et motivé, je transforme les idées en projets concrets ayant un impact réel.
         </p>
 

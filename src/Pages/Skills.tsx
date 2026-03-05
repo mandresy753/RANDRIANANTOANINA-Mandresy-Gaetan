@@ -63,10 +63,12 @@ function Skills() {
   const hardSkillsRef = useInView<HTMLDivElement>(0.3)
   const softSkillsRef = useInView<HTMLDivElement>(0.3)
   return (
-    <section id="skills" className="w-full min-h-screen 5px-6 py-20">
+    <section id="skills" className="w-full min-h-screen 5px-6 py-20
+    dark:bg-[#0F172A]">
       <h2
       ref={heading.ref}
       className={`text-4xl font-bold text-center mb-20
+         dark:text-slate-50
       transition-all duration-800 ease-out
       ${heading.isVisible ? "opacity-100 scale-100" : "opacity-0 scale-0"}
   `}
@@ -81,13 +83,15 @@ function Skills() {
         {`"bg-white rounded-3xl p-10 shadow-lg border border-gray-200 
           transition-all duration-800 ease-in
         ${hardSkillsRef.isVisible? "opacity-100 translate-x-0":"opacity-0 -translate-x-10" }`}>
-          <h3 className="text-2xl font-semibold mb-10 text-center">
+          <h3 className="text-2xl font-semibold mb-10 text-center
+           dark:text-slate-50">
             Compétences techniques
           </h3>
 
           {technicalSkillsByCategory.map((category) => (
             <div key={category.category}   className={`mb-8`}>
-              <h4 className="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-4">
+              <h4 className="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-4
+              dark:text-slate-300">
                 {category.category}
               </h4>
 
@@ -113,10 +117,11 @@ function Skills() {
         </div>
 
         <div ref={softSkillsRef.ref}
-        className={`bg-white rounded-3xl p-10 shadow-lg border border-gray-200
+        className={` rounded-3xl p-10 shadow-lg border border-gray-200
         transition-all duration-800 ease-in
         ${softSkillsRef.isVisible? "opacity-100  translate-x-0":"opacity-0 translate-x-10" }`} >
-          <h3 className="text-2xl font-semibold mb-10 text-center">
+          <h3 className="text-2xl font-semibold mb-10 text-center
+           dark:text-slate-50">
             Compétences comportementales
           </h3>
 

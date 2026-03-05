@@ -23,8 +23,10 @@ function Projects() {
   const titleRef = useInView<HTMLHeadingElement>(0.3)
 
   return (
-    <section id="projects" className="w-full min-h-screen px-6 py-20 bg-gray-50">
+    <section id="projects" className="w-full min-h-screen px-6 py-20 bg-gray-50
+    dark:bg-[#1e293b]">
       <h2 className={`text-3xl md:text-4xl font-bold mb-12 text-center
+       dark:text-slate-50
       duration-800
         ${titleRef.isVisible? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 translate-x-10 "}
         `}
@@ -55,9 +57,11 @@ function Projects() {
               className="w-full h-64 object-contain"
             />
 
-            <div className="p-4 flex flex-col flex-1">
-              <h3 className="font-semibold text-2xl mb-2">{project.name}</h3>
-              <p className="text-gray-700 text-base md:text-lg mb-4 flex-1">
+            <div className="p-4 flex flex-col flex-1
+            dark:bg-[#1f2937]">
+              <h3 className="font-semibold text-2xl mb-2  dark:text-slate-50">{project.name}</h3>
+              <p className="text-gray-700 text-base md:text-lg mb-4 flex-1
+              dark:text-slate-300">
                 {project.description}
               </p>
               <a

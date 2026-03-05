@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Projects from "./Pages/Projects";
 import About from "./Pages/About";
 import Navbar from "./components/Navbar";
+import ThemeToggle from "./components/ThemeToggle";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -23,6 +24,7 @@ const links = [
 function App() {
   return (
     <>
+    <ThemeToggle/>
       <Header />
       <Home />
       <About />

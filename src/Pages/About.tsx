@@ -9,7 +9,7 @@ function About() {
       className={
         `
       w-full min-h-screen bg-gray-50 px-6 py-20 flex flex-col items-center gap-8 md:gap-12
-      
+      dark:bg-[#1e293b]
         transition-all duration-1500 ease-out
         ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
       `
@@ -17,12 +17,14 @@ function About() {
       
       ref={ref}
     >
-      <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
+      <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center
+       dark:text-slate-50">
         A Propos de <span className="text-blue-500">Moi</span>
       </h2>
 
       <div className="max-w-4xl flex flex-col gap-6">
-        <p className="text-base md:text-lg lg:text-xl text-justify leading-relaxed">
+        <p className="text-base md:text-lg lg:text-xl text-justify leading-relaxed
+        dark:text-slate-300">
           Animé par une forte curiosité pour le numérique et motivé par l’envie constante de progresser, 
           je suis un étudiant en informatique qui s’investit pleinement dans son parcours académique et personnel. 
           J’ai choisi ce domaine pour son aspect concret et sa capacité à apporter des solutions utiles à des problématiques réelles, 
@@ -33,7 +35,8 @@ function About() {
           collaborer efficacement et m’impliquer avec sérieux pour mener un projet à son terme, même sous contrainte de temps ou de pression.
         </p>
 
-        <p className="text-base md:text-lg lg:text-xl text-justify leading-relaxed">
+        <p className="text-base md:text-lg lg:text-xl text-justify leading-relaxed
+        dark:text-slate-300">
           Au-delà des aspects techniques, j’accorde une grande importance à la communication, à l’écoute et au respect du travail en équipe. 
           Je cherche continuellement à améliorer ma capacité à m’exprimer avec clarté, à prendre la parole avec assurance et à transmettre mes idées de manière simple et efficace.
 
