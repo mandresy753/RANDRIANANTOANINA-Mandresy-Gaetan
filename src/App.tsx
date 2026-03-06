@@ -5,6 +5,7 @@ import Projects from "./Pages/Projects";
 import About from "./Pages/About";
 import Navbar from "./components/Navbar";
 import ThemeToggle from "./components/ThemeToggle";
+import Footer from "./components/Footer";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -30,8 +31,8 @@ function App() {
       <About />
       <Skills />
       <Projects />
-
       <Navbar links={links} />
+      <Footer/>
     </>
   );
 }
