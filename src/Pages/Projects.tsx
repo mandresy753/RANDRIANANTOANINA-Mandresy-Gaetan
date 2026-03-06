@@ -24,12 +24,12 @@ function Projects() {
   return (
     <section 
       id="projects" 
-      className="w-full min-h-screen overflow-x-hidden px-6 py-20 transition-colors duration-500
+      className="w-full min-h-screen px-6 py-20 transition-colors duration-500 overflow-x-hidden
                  bg-gray-50 dark:bg-[#1e293b]"
     >
       <h2 
         className={`text-3xl md:text-4xl font-bold mb-12 text-center duration-800 transition-all
-          ${titleRef.isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 translate-x-10"}
+          ${titleRef.isVisible ? "opacity-100 translate-y-0" : "opacity-0 "}
           text-slate-900 dark:text-slate-50`}
         ref={titleRef.ref}
       >
