@@ -37,13 +37,16 @@ function About() {
             Je cherche continuellement à améliorer ma capacité à m’exprimer avec clarté, à prendre la parole avec assurance et à transmettre mes idées de manière simple et efficace.
           </p>
         </div>
-        <button 
+        <a href=""></a>
+        <a href="src/assets/CV.pdf" download>
+          <button 
           className="mt-4 px-8 py-3 rounded-lg font-bold text-white transition-all duration-300
                      bg-blue-600 hover:bg-blue-700 shadow-md hover:shadow-blue-500/20
                      dark:bg-blue-500 dark:hover:bg-blue-400 active:scale-95"
         >
           Télécharger Mon C.V
         </button>
+        </a>
       </div>
     </section>
   );
