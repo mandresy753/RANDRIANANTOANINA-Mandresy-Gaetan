@@ -1,7 +1,7 @@
 import { useInView } from "../hooks/useInView";
 
 function About() {
-  const { ref, isVisible } = useInView(0.2);
+  const { ref, isVisible } = useInView(0.25);
   
   return (
     <section
