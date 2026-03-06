@@ -18,7 +18,7 @@ const projects = [
 ];
 
 function Projects() {
-  const cardRef = useInView<HTMLDivElement>(0.4);
+  const cardRef = useInView<HTMLDivElement>(0.3);
   const titleRef = useInView<HTMLHeadingElement>(0.3);
 
   return (
