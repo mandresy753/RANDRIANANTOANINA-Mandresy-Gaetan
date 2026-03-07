@@ -26,7 +26,7 @@ function Navbar({ links }: NavbarProps) {
         });
       },
       {
-        threshold: 0.6,
+        threshold: 0.3,
       }
     );
 
