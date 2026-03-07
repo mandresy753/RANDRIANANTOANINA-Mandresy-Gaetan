@@ -5,7 +5,7 @@ function About() {
   
   return (
     <section
-      id={'a propos'}
+      id={'propos'}
       ref={ref}
       className="w-full min-h-screen bg-gray-50 dark:bg-[#1e293b] px-6 py-20 flex flex-col items-center transition-colors duration-500 overflow-hidden"
     >

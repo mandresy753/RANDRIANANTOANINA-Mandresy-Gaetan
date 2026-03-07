@@ -17,7 +17,7 @@ import {
 
 const links = [
   { name: "Accueil", icon: <FontAwesomeIcon icon={faHouse} /> },
-  { name: "A Propos", icon: <FontAwesomeIcon icon={faUser} /> },
+  { name: "Propos", icon: <FontAwesomeIcon icon={faUser} /> },
   { name: "Compétences", icon: <FontAwesomeIcon icon={faCode} /> },
   { name: "Projets", icon: <FontAwesomeIcon icon={faFolderOpen} /> },
 ];
