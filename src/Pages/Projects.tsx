@@ -1,5 +1,6 @@
 import Tracker from "/src/assets/images/expense tracker.webp";
 import Pokedex from "/src/assets/images/pokedex.webp";
+import Portfolio from "/src/assets/images/portfolio.webp"
 import { useInView } from "../hooks/useInView";
 
 const projects = [
@@ -15,6 +16,12 @@ const projects = [
     description: "Application Pokedex en React avec API Pokemon",
     image: Pokedex,
   },
+  {
+    name: "Mon portfolio",
+    url: "",
+    description: "Mon univers web : découvrez mes projets et mes compétences en un coup d'œil !",
+    image: Portfolio,
+  },  
 ];
 
 function Projects() {
@@ -71,7 +78,8 @@ function Projects() {
                   {project.description}
                 </p>
 
-                <a
+                {project.url &&
+                  <a
                   href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -81,6 +89,7 @@ function Projects() {
                 >
                   Voir sur GitHub
                 </a>
+                }
               </div>
             </div>
           );
