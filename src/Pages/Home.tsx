@@ -31,8 +31,8 @@ function Home() {
         <div className="mt-8 flex flex-col sm:flex-row gap-6">
           <button
             onClick={() => {
-              const footer = document.getElementById("footer");
-              footer?.scrollIntoView({ behavior: "smooth" });
+              const projects = document.getElementById("projects");
+              projects?.scrollIntoView({ behavior: "smooth" });
             }}
             className="bg-linear-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 transition text-white font-bold px-6 py-3 rounded-lg shadow-lg"
           >
@@ -40,8 +40,8 @@ function Home() {
           </button>
           <button 
           onClick={() => {
-              const projects = document.getElementById("projects");
-              projects?.scrollIntoView({ behavior: "smooth" });
+              const footer = document.getElementById("footer");
+              footer?.scrollIntoView({ behavior: "smooth" });
             }}
           className="border-2 border-blue-500 hover:bg-blue-500 hover:text-white transition text-blue-500 font-bold px-6 py-3 rounded-lg"
           >
