@@ -29,7 +29,7 @@ function Projects() {
 
   return (
     <section
-      id="projects"
+      id="projets"
       className="w-full min-h-screen px-6 py-20 overflow-hidden
       bg-gray-50 dark:bg-[#1e293b] transition-colors duration-500"
     >

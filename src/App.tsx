@@ -16,10 +16,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const links = [
-  { name: "Home", icon: <FontAwesomeIcon icon={faHouse} /> },
-  { name: "About", icon: <FontAwesomeIcon icon={faUser} /> },
-  { name: "Skills", icon: <FontAwesomeIcon icon={faCode} /> },
-  { name: "Projects", icon: <FontAwesomeIcon icon={faFolderOpen} /> },
+  { name: "Accueil", icon: <FontAwesomeIcon icon={faHouse} /> },
+  { name: "A Propos", icon: <FontAwesomeIcon icon={faUser} /> },
+  { name: "Compétences", icon: <FontAwesomeIcon icon={faCode} /> },
+  { name: "Projets", icon: <FontAwesomeIcon icon={faFolderOpen} /> },
 ];
 
 function App() {

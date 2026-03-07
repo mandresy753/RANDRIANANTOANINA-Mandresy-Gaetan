@@ -5,7 +5,7 @@ function Home() {
   const {ref, isVisible} = useInView(0.0)
   return (
     <section
-      id="home"
+      id="accueil"
       ref={ref}
       className={`
         w-full min-h-screen flex flex-col-reverse md:flex-row items-center justify-center gap-12 px-6 md:px-20 py-20

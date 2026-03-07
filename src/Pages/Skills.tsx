@@ -65,7 +65,7 @@ function Skills() {
 
   return (
     <section
-      id="skills"
+      id="compétences"
       className="w-full min-h-screen px-6 py-20 overflow-hidden dark:bg-[#0F172A]"
     >
       <h2
