@@ -8,13 +8,13 @@ function Home() {
       id="accueil"
       ref={ref}
       className={`
-        w-full min-h-screen flex flex-col-reverse md:flex-row items-center justify-center gap-12 px-6 md:px-20 py-20
+        w-full min-h-screen flex flex-col-reverse 2xl:flex-row items-center justify-center gap-12 px-6 md:px-20 py-20
         dark:bg-[#0F172A]
         transition-all duration-1500 ease-in
         ${isVisible? "opacity-100": "opacity-0"}
       `}
     >
-      <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
+      <div className="flex-1 flex flex-col items-center 2xl:items-start text-center 2xl:text-left">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight
         dark:text-slate-50">
           Bonjour, je suis <span className="text-blue-500">RANDRIANANTOANINA Mandresy Gaëtan</span>
