@@ -33,6 +33,7 @@ function App() {
       <Projects />
       <Navbar links={links} />
       <Footer/>
+  
     </>
   );
 }

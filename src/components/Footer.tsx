@@ -7,7 +7,9 @@ function Footer() {
     <footer className="w-full py-10 px-6 text-center pb-32
       bg-gray-100 dark:bg-slate-900
       border-t border-gray-200 dark:border-slate-800">
-
+          <p className="text-lg font-semibold mb-6 text-gray-700 dark:text-slate-300">
+        Travaillons ensemble 🤝
+      </p>
       <div className="flex justify-center gap-6 mb-6 text-2xl">
         <a
           target="_blank"
