@@ -38,7 +38,7 @@ function About() {
           </p>
         </div>
         <a href=""></a>
-        <a href="src/assets/CV.pdf" download>
+        <a href="/CV.pdf" download>
           <button 
           className="mt-4 px-8 py-3 rounded-lg font-bold text-white transition-all duration-300
                      bg-blue-600 hover:bg-blue-700 shadow-md hover:shadow-blue-500/20
