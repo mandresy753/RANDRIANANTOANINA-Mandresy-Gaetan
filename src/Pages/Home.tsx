@@ -21,13 +21,13 @@ function Home() {
         </h1>
         <h2 className="mt-4 text-2xl md:text-3xl text-gray-700 font-semibold
          dark:text-slate-50">
-          Développeur Full Stack & Administrateur Systèmes et Réseaux
+          Développeur web junior en formation
         </h2>
         <p className="mt-6 text-gray-600 text-base md:text-lg lg:text-xl max-w-2xl leading-relaxed
         dark:text-slate-300">
-          Passionné par le développement et la gestion des systèmes, je crée des solutions performantes et sécurisées, alliant innovation et fiabilité. Toujours curieux et motivé, je transforme les idées en projets concrets ayant un impact réel.
-        </p>
-
+          Étudiant en informatique passionné par le développement web, 
+          je souhaite intégrer une alternance afin de progresser en environnement professionnel. 
+          Curieux et motivé, je cherche à développer mes compétences à travers des projets concrets.</p>
         <div className="mt-8 flex flex-col sm:flex-row gap-6">
           <button
             onClick={() => {
