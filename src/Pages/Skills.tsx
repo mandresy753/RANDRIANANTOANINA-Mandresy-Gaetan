@@ -28,7 +28,11 @@ const technicalSkillsByCategory: SkillCategory[] = [
   },
   {
     category: "Frameworks",
-    skills: [{ name: "React", icon: "/icons/react.svg" }],
+    skills: [
+      { name: "React", icon: "/icons/react.svg" },
+      { name: "NextJs", icon: "icons/nextjs.webp"}
+
+    ],
   },
   {
     category: "UI Frameworks",

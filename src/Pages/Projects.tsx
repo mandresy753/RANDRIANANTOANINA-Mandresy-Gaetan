@@ -1,6 +1,7 @@
 import Tracker from "/src/assets/images/expense tracker.webp";
 import Pokedex from "/src/assets/images/pokedex.webp";
 import Portfolio from "/src/assets/images/portfolio.webp"
+import EventSync from "/src/assets/images/EventSync.webp"
 import { useInView } from "../hooks/useInView";
 
 const projects = [
@@ -21,7 +22,15 @@ const projects = [
     url: "",
     description: "Mon univers web : découvrez mes projets et mes compétences en un coup d'œil !",
     image: Portfolio,
-  },  
+  },
+   {
+  name: "EventSync",
+  url: "https://github.com/M-B-O-T",
+  description:
+    "Plateforme complète de gestion d'événements composée d'un site public développé avec Next.js et d'un back-office d'administration réalisé avec React Admin. Le code source est organisé au sein d'une organisation GitHub.",
+  image: EventSync,
+},
+
 ];
 
 function Projects() {
